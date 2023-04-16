@@ -24,9 +24,9 @@ function onSubmitForm(event) {
     alert('Введіть текст');
     return;
   }
+  console.log(localStorage.getItem(STORAGE_KEY));
   localStorage.removeItem(STORAGE_KEY);
   form.reset();
-  console.log(formData);
 }
 
 function populateText() {
